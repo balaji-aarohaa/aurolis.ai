@@ -256,13 +256,34 @@ body{
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
-    height:45px;
+    height:55px;
     align-items: center;
 }
 .page-title h5{
     font-weight: 600;
-    margin: 0;
+    margin-bottom: 0.5rem;
 }
+.page-title nav .breadcrumb{
+    margin-bottom: 0;
+}
+.page-title nav .breadcrumb .breadcrumb-item{
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+}
+.page-title nav .breadcrumb .breadcrumb-item a{
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+.page-title nav .breadcrumb .breadcrumb-item a:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.page-title nav .breadcrumb-item + .breadcrumb-item::before {   
+    color: rgba(255, 255, 255, .5);
+    content: url(../img/arrow-right.png);
+    line-height: 26px;
+
+  }
 .btn-blue{   
     border: none;
     color: #fff;
@@ -410,19 +431,17 @@ body{
     -webkit-line-clamp: 4;
     height: 88px;
 }
-
-.action .dropdown-menu li{
-    margin: .5rem;
-}
 .action .dropdown-menu a{
     background: none;
-    height: 30px;
-    width: 30px;
-    border-radius: 4px;
     display: block;
-    line-height: 28px;
     padding: 0;
-    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+  border-radius: 6px;
+}
+.action .dropdown-menu a:hover{
+    background: rgba(0,0,0,0.3);
 }
 .action .dropdown-menu a img{
     height: 16px;
@@ -456,16 +475,14 @@ body{
     height: auto;
   }
 .action .dropdown-menu{
-    background: #25303e;
+    background: #1455ff;
   width: auto;
   min-width: auto;
   border-radius: 12px;
   padding: .5rem;
   
 }
-.action .dropdown-menu.show {
-    display: flex;
-  }
+
 .modal-backdrop{
     background: #0D6EFD;
 }
