@@ -40,8 +40,8 @@ body{
     justify-content: center;
 }
 .login-left img{
-    height: auto;
-    width: auto;
+    height: 100vh;
+    width: 100%;
     object-fit: cover;
 }
 .login-right{
