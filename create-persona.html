@@ -27,16 +27,16 @@
                     <li><a href="create-persona.html" class="active">
                             <div><img src="img/menu-persona.png"></div>Persona
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="generate-usecase.html">
                             <div><img src="img/menu-usecase.png"></div>Use Case
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="generate-functional-requirement.html">
                             <div><img src="img/menu-functional.png"></div>Functional Requirement
                         </a></li>
                 </ul>
             </div>
             <div class="logout">
-                <a href="#">
+                <a href="index.html">
                     <div><img src="img/logout.png"></div>Logout
                 </a>
             </div>
@@ -56,7 +56,7 @@
                 <div class="d-flex gap-3">
                     <button type="button" class="btn-blue">Assign</button>
                     <button type="button" class="btn-blue" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">Create New Project</button>
+                        data-bs-target="#staticBackdrop">Create New Persona</button>
                 </div>
             </div>
             <div class="main-content">
@@ -208,21 +208,22 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Create New Persona</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>     
                 </div>
                 <div class="modal-body">
                     <div class="mb-4">
                         <label for="pn" class="form-label">Select Project</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected class="fs-option">Select</option>
-                            <option value="1" class="fs-option">Transient</option>
+                        <select class="form-select">
+                            <option selected>Select</option>
+                            <option value="1">Transient</option>
                             <option value="2">Treasury Bond Trading</option>
                             <option value="3">Survey Analysis</option>
                             <option value="4">DiagnoSmart</option>
-                        </select>
+                        </select>                        
                     </div>
                     <div class="option-list">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="persona-radio" id="chk1" checked>
+                            <input class="form-check-input" type="radio" name="persona-radio" id="chk1" checked="checked">
                             <label class="form-check-label" for="chk1">
                                 Create
                             </label>
@@ -238,34 +239,46 @@
                         <div class="mb-4 ">
                             <label for="pn" class="form-label">Persona Requirement</label>
                             <div class="upload-doc">
-                                <textarea class="form-control" id="br" rows="5"></textarea>
+                                <textarea class="form-control" id="br" rows="5" placeholder="Enter Persona Requirement"></textarea>
+                                <div class="upload-section">
+                                <div class="upload-text">Upload Persona Requirement</div>
                                 <div class="upload-btn">
-                                    <input class="upload" type="file">
-                                    <img src="img/upload.png">
-                                </div>
-                            </div>
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img src="img/upload.png">
+                                    </label>
+                                    <input id="file-upload" type="file" />
+                                    <span>Upload File</span>
+                                </div>                 
+                               </div>
+                               </div>
                         </div>
                         <div class="mb-4">
                             <label for="br2" class="form-label">Business Requirement</label>
                             <div class="upload-doc">
-                                <textarea class="form-control" id="br2" rows="5"></textarea>
+                                <textarea class="form-control" id="br" rows="5" placeholder="Enter Business Requirement (BRD)"></textarea>
+                                <div class="upload-section">
+                                <div class="upload-text">Upload Business Requirement (BRD)</div>
                                 <div class="upload-btn">
-                                    <input class="upload" type="file">
-                                    <img src="img/upload.png">
-                                </div>
-                            </div>
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img src="img/upload.png">
+                                    </label>
+                                    <input id="file-upload" type="file" />
+                                    <span>Upload File</span>
+                                </div>                 
+                               </div>
+                               </div>
                         </div>
                     </div>
                     <div class="persona-section" style="display: none;">
                         <ul class="persona-section-list">
                             <li>
                                 <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
-                                <div class="persona-section-card">
-                                    <div class="persona-section-logo">
-                                        <img src="img/persona2.png">
-                                    </div>
-
+                                <div class="persona-section-card"> 
                                     <div class="persona-section-body" for="btn-check">
+                                        <div class="persona-section-logo">
+                                            <img src="img/persona2.png">
+                                        </div>
+                                        <div class="persona-details">
                                         <div class="persona-section-name">
                                             Jacob Taylor
                                         </div>
@@ -276,17 +289,18 @@
                                             Championing brand loyalty through authentic engagement, passionate
                                             storytelling, and meaningful customer connections.
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
-                                <div class="persona-section-card">
-                                    <div class="persona-section-logo">
-                                        <img src="img/persona2.png">
-                                    </div>
-
+                                <div class="persona-section-card"> 
                                     <div class="persona-section-body" for="btn-check">
+                                        <div class="persona-section-logo">
+                                            <img src="img/persona2.png">
+                                        </div>
+                                        <div class="persona-details">
                                         <div class="persona-section-name">
                                             Jacob Taylor
                                         </div>
@@ -297,17 +311,18 @@
                                             Championing brand loyalty through authentic engagement, passionate
                                             storytelling, and meaningful customer connections.
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
-                                <div class="persona-section-card">
-                                    <div class="persona-section-logo">
-                                        <img src="img/persona2.png">
-                                    </div>
-
+                                <div class="persona-section-card"> 
                                     <div class="persona-section-body" for="btn-check">
+                                        <div class="persona-section-logo">
+                                            <img src="img/persona2.png">
+                                        </div>
+                                        <div class="persona-details">
                                         <div class="persona-section-name">
                                             Jacob Taylor
                                         </div>
@@ -318,17 +333,18 @@
                                             Championing brand loyalty through authentic engagement, passionate
                                             storytelling, and meaningful customer connections.
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
-                                <div class="persona-section-card">
-                                    <div class="persona-section-logo">
-                                        <img src="img/persona2.png">
-                                    </div>
-
+                                <div class="persona-section-card"> 
                                     <div class="persona-section-body" for="btn-check">
+                                        <div class="persona-section-logo">
+                                            <img src="img/persona2.png">
+                                        </div>
+                                        <div class="persona-details">
                                         <div class="persona-section-name">
                                             Jacob Taylor
                                         </div>
@@ -339,6 +355,7 @@
                                             Championing brand loyalty through authentic engagement, passionate
                                             storytelling, and meaningful customer connections.
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             </li>
@@ -348,8 +365,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn-blue">Add</button>
+                    
+                    <button type="button" class="btn-blue" data-bs-dismiss="modal">Create</button>
                 </div>
             </div>
         </div>

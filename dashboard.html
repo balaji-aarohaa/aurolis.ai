@@ -21,12 +21,12 @@
                     <li><a href="dashboard.html" class="active"><div><img src="img/menu-dashboard.png"></div>Dashboard</a></li>
                     <li><a href="create-project.html"><div><img src="img/menu-project.png"></div>Project</a></li>
                     <li><a href="create-persona.html"><div><img src="img/menu-persona.png"></div>Persona</a></li>
-                    <li><a href="#"><div><img src="img/menu-usecase.png"></div>Use Case</a></li>
-                    <li><a href="#"><div><img src="img/menu-functional.png"></div>Functional Requirement</a></li>
+                    <li><a href="generate-usecase.html"><div><img src="img/menu-usecase.png"></div>Use Case</a></li>
+                    <li><a href="generate-functional-requirement.html"><div><img src="img/menu-functional.png"></div>Functional Requirement</a></li>
                 </ul>
             </div>
             <div class="logout">
-                <a href="#"><div><img src="img/logout.png"></div>Logout</a>
+                <a href="index.html"><div><img src="img/logout.png"></div>Logout</a>
             </div>
         </div>
         <div class="content">
@@ -100,31 +100,36 @@
                                     </div>
                                 </div>
                                 <div class="card h-50 mb-3">
-                                    <h5 class="card-header">List of Projects</h5>
+                                    <h5 class="card-header">List of Persona</h5>
                                     <div class="card-body">                                       
                                         <table class="table table-borderless mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">Project Name</th>
-                                                    <th class="text-center">Creation Date</th>
+                                                    <th class="text-center">Persona</th>
+                                                    <th class="text-center">Designation</th>
+                                                    <th class="text-center">Project</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center">Transient Bonds</td>
                                                     <td class="text-center">02/01/2025</td>
+                                                    <td class="text-center">Transient Bonds</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">Treasury Bond Trading</td>
                                                     <td class="text-center">03/01/2025</td>
+                                                    <td class="text-center">Transient Bonds</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">Wealth Management</td>
                                                     <td class="text-center">04/01/2025</td>
+                                                    <td class="text-center">Transient Bonds</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">Wealth Management</td>
                                                     <td class="text-center">04/01/2025</td>
+                                                    <td class="text-center">Transient Bonds</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -139,70 +144,101 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="card h-100 mb-3">
-                                    <h5 class="card-header">List of Projects</h5>
+                                    <h5 class="card-header">List of Test Case</h5>
                                     <div class="card-body">
                                        
                                         <table class="table table-borderless mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">Project Name</th>
-                                                    <th class="text-center">Creation Date</th>
+                                                    <th class="text-center"></th>
+                                                    <th class="text-center">Test Id</th>
+                                                    <th class="text-center">Test Case name</th>
+                                                    <th class="text-center">Project</th>
+                                                    <th class="text-center">Persona</th>
+                                                    <th class="text-center">Creation date</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-center">Transient Bonds</td>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ17301</td>
+                                                    <td class="text-center">Transient Login</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
                                                     <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Treasury Bond Trading</td>
-                                                    <td class="text-center">03/01/2025</td>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8302</td>
+                                                    <td class="text-center">Transient Registration</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Wealth Management</td>
-                                                    <td class="text-center">04/01/2025</td>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8763</td>
+                                                    <td class="text-center">Transient Production</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ17304</td>
+                                                    <td class="text-center">Transient Client</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8305</td>
+                                                    <td class="text-center">DiagnoSmart Client</td>
                                                     <td class="text-center">DiagnoSmart</td>
-                                                    <td class="text-center">05/01/2025</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">Transient Bonds</td>
+                                                    <td class="text-center">William Allan</td>
                                                     <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Treasury Bond Trading</td>
-                                                    <td class="text-center">03/01/2025</td>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8766</td>
+                                                    <td class="text-center">Transient Production</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Wealth Management</td>
-                                                    <td class="text-center">04/01/2025</td>
-                                                </tr>
-                                                <tr>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ17307</td>
+                                                    <td class="text-center">DiagnoSmart Production</td>
                                                     <td class="text-center">DiagnoSmart</td>
-                                                    <td class="text-center">05/01/2025</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">Transient Bonds</td>
+                                                    <td class="text-center">William Allan</td>
                                                     <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Treasury Bond Trading</td>
-                                                    <td class="text-center">03/01/2025</td>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8308</td>
+                                                    <td class="text-center">Transient Login</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Wealth Management</td>
-                                                    <td class="text-center">04/01/2025</td>
-                                                </tr>                                               
-                                                <tr>
-                                                    <td class="text-center">Wealth Management</td>
-                                                    <td class="text-center">04/01/2025</td>
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8769</td>
+                                                    <td class="text-center">Transient Production</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Wealth Management</td>
-                                                    <td class="text-center">04/01/2025</td>
-                                                </tr>
-                                                
+                                                    <td class="text-center"><input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></td>
+                                                    <td class="text-center">RZ8769</td>
+                                                    <td class="text-center">Transient Client</td>
+                                                    <td class="text-center">Transient</td>
+                                                    <td class="text-center">William Allan</td>
+                                                    <td class="text-center">02/01/2025</td>
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                         
