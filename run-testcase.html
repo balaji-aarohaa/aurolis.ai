@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auralis.AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="css/example-styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="img/logo-inner.png"> <span>Auralis.AI</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="dashboard.html">
+                            <div><img src="img/menu-dashboard.png"></div>Dashboard
+                        </a></li>
+                    <li><a href="create-project.html">
+                            <div><img src="img/menu-project.png"></div>Project
+                        </a></li>
+                    <li><a href="create-persona.html">
+                            <div><img src="img/menu-persona.png"></div>Persona
+                        </a></li>
+                    <li><a href="generate-usecase.html">
+                            <div><img src="img/menu-usecase.png"></div>Use Case
+                        </a></li>
+                    <li><a href="generate-functional-requirement.html">
+                            <div><img src="img/menu-functional.png"></div>Functional Requirement
+                        </a></li>
+                        <li><a href="run-testcase.html" class="active">
+                            <div><img src="img/menu-testcase.png"></div>Test Case
+                        </a></li>
+                </ul>
+            </div>
+            <div class="logout">
+                <ul>
+                    <li><a href="index.html" class="user">
+                        <div><img src="img/persona.png"></div>Sam
+                    </a></li>
+                    <li><a href="index.html">
+                        <div><img src="img/logout.png"></div>Logout
+                    </a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="content">
+            <div class="page-title">
+                <div>
+                <h5>Test Case</h5>                
+                </div>               
+            </div>
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3 mt-3 project-info">
+                            <label class="input-group-text" for="inputGroupSelect01">Project :</label>
+                            <select class="form-select" >
+                                <option selected>Transient</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                          </div>                          
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group mb-3 mt-3 project-info">
+                            <label class="input-group-text" for="inputGroupSelect01">Upload :</label>
+                            <div class="upload-section inline">
+                                <div class="upload-text">Upload Test Strategy Document</div>
+                                <div class="upload-btn">
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img src="img/upload.png">
+                                    </label>
+                                    <input id="file-upload" type="file" />
+                                    <span>Upload File</span>
+                                </div>                 
+                               </div>
+                          </div>                          
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3 project-info demo-example position-menu-within">
+                            <label class="input-group-text" for="inputGroupSelect01">Persona :</label>
+                            <select class="form-select" id="line-wrap-example" multiple>                                
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                          </div>   
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3 project-info demo-example position-menu-within">
+                            <label class="input-group-text" for="inputGroupSelect01">Use Case :</label>
+                            <select class="form-select" id="line-wrap-example2" multiple>                                
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                          </div>   
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3 project-info demo-example position-menu-within">
+                            <label class="input-group-text" for="inputGroupSelect01">Functional Requirement :</label>
+                            <select class="form-select" id="line-wrap-example3" multiple>                               
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                          </div>   
+
+                    </div>
+                    <div class="col-12 mb-5">
+                        <button type="button" class="btn-blue me-3">Generate Test Case</button>
+                        <button type="button" class="btn-blue">Import</button>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="persona-header">
+                            <div class="persona-img"><img src="img/persona2.png"></div>
+                            <div class="ph-name"><span>Jacob Taylor</span> - Fixed Income Analysts</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="usecase-list">
+                                    <ul>
+                                        <li>
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">                                                                             
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                    User Registration
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="usecase-card" >
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">                                                                                 
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                   Login/Logout
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                         <li> 
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">            
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                    Password Recovery
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">             
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                    User Profile
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="persona-header">
+                            <div class="persona-img"><img src="img/persona2.png"></div>
+                            <div class="ph-name"><span>Jacob Taylor</span> - Fixed Income Analysts</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="usecase-list">
+                                    <ul>
+                                        <li>
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">                                                                             
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                    User Registration
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">                                                                                 
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                   Login/Logout
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                         <li> 
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">            
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                    Password Recovery
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="usecase-card">
+                                                <input class="form-check-input" type="checkbox" id="btn-check" autocomplete="off">
+                                                <div class="usecase-body">             
+                                                <div class="usecase-icon">
+                                                    <img src="img/file.png">                                            
+                                                </div>
+                                                <div class="usecase-title" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                    User Profile
+                                                </div>
+                                            </div>   
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                        <button type="button" class="btn-blue me-3">Download</button>
+                        <button type="button" class="btn-blue me-3">Export</button>
+                        <button type="button" class="btn-blue" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Execute</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                Copyright 2025. aarohaa.ai
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Test Case</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>     
+            </div>
+            <div class="modal-body">                
+                <embed
+                src="img/docs/test-case.pdf"
+                type="application/pdf"
+                frameBorder="0"
+                scrolling="auto"
+                height="700px"
+                width="100%"
+            ></embed>
+            
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal -->     
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">        
+        <div class="modal-body">
+            <div class="mb-3 mt-5">
+                <label for="ewu" class="form-label">Enter Web URL</label>
+                <input type="text" class="form-control" id="ewu">                       
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Execute</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">        
+        <div class="modal-body text-center">
+            <div class="mb-3"><img src="img/success.gif"></div>
+            Test execution completed successfully
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">            
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content"> 
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Actual Test Result</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>       
+        <div class="modal-body text-center">
+            Actual Result: The chatbot provided hond recommendations for Vanguard, Blackrock, Goldman Sachs, Capital, 100, and Neuberger based on their current holdings. Additionally, it provided lists of Boeing sell axes, Apple hay axes, Amazon sell axes, and Intel buy axes. Testing: PASS The chatbot successfully provided the expected recommendations and lists all test cases. 
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Download Result</button>
+          <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Export</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery.multi-select.js"></script>
+    <script>
+        $(function () {
+            $("input[name='persona-radio']").click(function () {
+                if ($("#chk1").is(":checked")) {
+                    $("#create-section").show();
+                    $(".usecase-list").hide();
+                } else {
+                    $("#create-section").hide();
+                    $(".usecase-list").show();
+                }
+            });
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+    $(function(){       
+        $('#line-wrap-example, #line-wrap-example2, #line-wrap-example3').multiSelect({
+            positionMenuWithin: $('.position-menu-within')
+        });       
+        $('#modal-example').multiSelect({
+            'modalHTML': '<div class="multi-select-modal">'
+        });
+        $('#line-wrap-example2').multiSelect({
+            positionMenuWithin: $('.position-menu-within')
+        });       
+        $('#modal-example').multiSelect({
+            'modalHTML': '<div class="multi-select-modal">'
+        });
+        $('#line-wrap-example3').multiSelect({
+            positionMenuWithin: $('.position-menu-within')
+        });       
+        $('#modal-example').multiSelect({
+            'modalHTML': '<div class="multi-select-modal">'
+        });
+    });
+    </script>
+</body>
+
+</html>
