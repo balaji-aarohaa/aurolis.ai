@@ -975,7 +975,11 @@ body {
     padding-top: .5rem;
     text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden;  
+  color: #AFC5FF;
+}
+.usecase-title .tc:hover{
+    color: #1455ff;
 }
 .usecase-title .uc img, .usecase-title .fr img{
     width: 16px;
