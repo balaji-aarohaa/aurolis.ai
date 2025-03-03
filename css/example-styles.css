@@ -1,0 +1,95 @@
+.multi-select-container {
+    display: inline-block;
+    position: relative;
+    flex: 1;
+}
+
+.multi-select-menu {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    z-index: 1;
+    float: left;
+    min-width: 100%;
+    background: #1C2531;
+    margin: 1em 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    border-radius: 0 0 16px 16px;
+}
+
+.multi-select-menuitem {
+    display: block;
+    font-size:16px;
+    padding: 1em 1em 1em 50px;
+    white-space: nowrap;
+}
+
+.multi-select-legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.multi-select-legend + .multi-select-menuitem {
+    padding-top: 0.25rem;
+}
+
+.multi-select-menuitem + .multi-select-menuitem {
+    padding-top: 0;
+}
+
+.multi-select-presets {
+    border-bottom: 1px solid #ddd;
+}
+
+.multi-select-menuitem input {
+    position: absolute;
+    margin-left: -35px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.multi-select-button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0.5em 0.6em;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: -0.5em;
+    background-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    width: 100%;
+}
+
+.multi-select-button:after {
+    content: url(../img/arrow-down.png);
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+    float: right;  
+}
+
+.multi-select-container--open .multi-select-menu {
+    display: block;
+}
+
+.multi-select-container--open .multi-select-button:after {
+    border-width: 0 0.4em 0.4em 0.4em;
+    border-color: transparent transparent #999 transparent;
+}
+
+.multi-select-container--positioned .multi-select-menu {
+    /* Avoid border/padding on menu messing with JavaScript width calculation */
+    box-sizing: border-box;
+}
+
+.multi-select-container--positioned .multi-select-menu label {
+    /* Allow labels to line wrap when menu is artificially narrowed */
+    white-space: normal;
+}

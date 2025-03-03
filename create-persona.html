@@ -236,7 +236,23 @@
                             </label>
                         </div>
                     </div>
-                    <div id="create-section">
+                    <div id="create-section">                        
+                            <div class="mb-3">
+                                <label for="pn" class="form-label">Persona Name</label>
+                                <input type="text" class="form-control" id="persona-name" placeholder="Enter Persona Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pn" class="form-label">Persona Name</label>
+                                <input type="text" class="form-control" id="persona-title" placeholder="Enter Persona Title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pn" class="form-label">Persona Name</label>
+                                <select class="form-select">
+                                    <option selected>Select</option>
+                                    <option value="1">India</option>
+                                    <option value="2">United States of America</option>
+                                </select> 
+                            </div>                        
                         <div class="mb-4 ">
                             <label for="pn" class="form-label">Persona Requirement</label>
                             <div class="upload-doc">
@@ -280,6 +296,38 @@
                                 <option value="3">Survey Analysis</option>
                                 <option value="4">DiagnoSmart</option>
                             </select>                        
+                        </div>
+                        <div class="mb-4 ">
+                            <label for="pn" class="form-label">Persona Requirement</label>
+                            <div class="upload-doc">
+                                <textarea class="form-control" id="br" rows="5" placeholder="Enter Persona Requirement"></textarea>
+                                <div class="upload-section">
+                                <div class="upload-text">Upload Persona Requirement</div>
+                                <div class="upload-btn">
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img src="img/upload.png">
+                                    </label>
+                                    <input id="file-upload" type="file" />
+                                    <span>Upload File</span>
+                                </div>                 
+                               </div>
+                               </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="br2" class="form-label">Business Requirement</label>
+                            <div class="upload-doc">
+                                <textarea class="form-control" id="br" rows="5" placeholder="Enter Business Requirement (BRD)"></textarea>
+                                <div class="upload-section">
+                                <div class="upload-text">Upload Business Requirement (BRD)</div>
+                                <div class="upload-btn">
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img src="img/upload.png">
+                                    </label>
+                                    <input id="file-upload" type="file" />
+                                    <span>Upload File</span>
+                                </div>                 
+                               </div>
+                               </div>
                         </div>
                         <ul class="persona-section-list">
                             <li>
@@ -376,8 +424,9 @@
 
                 </div>
                 <div class="modal-footer">
-                    
-                    <button type="button" class="btn-blue" data-bs-dismiss="modal">Create</button>
+                    <button type="button" class="btn-blue btn-create" data-bs-dismiss="modal">AI Generate</button>
+                    <button type="button" class="btn-blue btn-create" data-bs-dismiss="modal">Add</button>
+                    <button type="button" class="btn-blue btn-import" data-bs-dismiss="modal" style="display: none;">Import</button>
                 </div>
             </div>
         </div>
@@ -395,9 +444,13 @@
                 if ($("#chk1").is(":checked")) {
                     $("#create-section").show();
                     $(".persona-section").hide();
+                    $(".btn-import").hide();
+                    $(".btn-create").show();
                 } else {
                     $("#create-section").hide();
                     $(".persona-section").show();
+                    $(".btn-import").show();
+                    $(".btn-create").hide();
                 }
             });
         });

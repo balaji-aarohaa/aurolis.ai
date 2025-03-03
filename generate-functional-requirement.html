@@ -231,7 +231,7 @@
                     <div class="mb-4 ">
                         <label for="pn" class="form-label">Enter Use Case</label>
                         <div class="upload-doc">
-                            <textarea class="form-control" id="br" rows="5" placeholder="Enter Persona Requirement"></textarea>
+                            <textarea class="form-control" id="br" rows="5" placeholder="Enter Use Case"></textarea>
                             <div class="upload-section">
                             <div class="upload-text">Upload Use Case</div>
                             <div class="upload-btn">
@@ -244,7 +244,22 @@
                            </div>
                            </div>
                     </div>
-                  
+                    <div class="mb-4 ">
+                        <label for="pn" class="form-label">Enter Functional Requirement</label>
+                        <div class="upload-doc">
+                            <textarea class="form-control" id="br" rows="5" placeholder="Enter Functional Requirement"></textarea>
+                            <div class="upload-section">
+                            <div class="upload-text">Upload Use Case</div>
+                            <div class="upload-btn">
+                                <label for="file-upload" class="custom-file-upload">
+                                    <img src="img/upload.png">
+                                </label>
+                                <input id="file-upload" type="file" />
+                                <span>Upload File</span>
+                            </div>                 
+                           </div>
+                           </div>
+                    </div>
                 </div>
                 <div class="usecase-list" style="display: none;">
                     <div class="mb-4">
@@ -257,14 +272,37 @@
                         <option value="4">DiagnoSmart</option>
                     </select>                   
                 </div>
-                <div class="mb-4">
-                    <label for="pn" class="form-label">Select Use Case</label>
-                    <select class="form-select" >
-                        <option selected>Login/Logout</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>                  
+                <div class="mb-4 ">
+                    <label for="pn" class="form-label">Enter Use Case</label>
+                    <div class="upload-doc">
+                        <textarea class="form-control" id="br" rows="5" placeholder="Enter Use Case"></textarea>
+                        <div class="upload-section">
+                        <div class="upload-text">Upload Use Case</div>
+                        <div class="upload-btn">
+                            <label for="file-upload" class="custom-file-upload">
+                                <img src="img/upload.png">
+                            </label>
+                            <input id="file-upload" type="file" />
+                            <span>Upload File</span>
+                        </div>                 
+                       </div>
+                       </div>
+                </div>
+                <div class="mb-4 ">
+                    <label for="pn" class="form-label">Enter Functional Requirement</label>
+                    <div class="upload-doc">
+                        <textarea class="form-control" id="br" rows="5" placeholder="Enter Functional Requirement"></textarea>
+                        <div class="upload-section">
+                        <div class="upload-text">Upload Use Case</div>
+                        <div class="upload-btn">
+                            <label for="file-upload" class="custom-file-upload">
+                                <img src="img/upload.png">
+                            </label>
+                            <input id="file-upload" type="file" />
+                            <span>Upload File</span>
+                        </div>                 
+                       </div>
+                       </div>
                 </div>
                     <ul>
                         <li>
@@ -325,8 +363,9 @@
 
             </div>
             <div class="modal-footer">
-                
-                <button type="button" class="btn-blue" data-bs-dismiss="modal">Create</button>
+                <button type="button" class="btn-blue btn-create" data-bs-dismiss="modal">AI Generate</button>
+                    <button type="button" class="btn-blue btn-create" data-bs-dismiss="modal">Add</button>
+                    <button type="button" class="btn-blue btn-import" data-bs-dismiss="modal" style="display: none;">Import</button>      
             </div>
         </div>
     </div>
@@ -344,9 +383,13 @@
                 if ($("#chk1").is(":checked")) {
                     $("#create-section").show();
                     $(".usecase-list").hide();
+                    $(".btn-import").hide();
+                    $(".btn-create").show();
                 } else {
                     $("#create-section").hide();
                     $(".usecase-list").show();
+                    $(".btn-import").show();
+                    $(".btn-create").hide();
                 }
             });
         });

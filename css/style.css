@@ -198,7 +198,7 @@ body {
 }
 
 .menu {
-    height: calc(100% - 128px - 66px);
+    height: calc(100% - 128px - 142px);
     overflow: auto;
     scrollbar-width: none;
 }
@@ -210,20 +210,20 @@ body {
 
 .menu li {
     display: block;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 
 .menu li a {
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     text-decoration: none;
 }
 
 .menu li a div {
     background: none;
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
     border-radius: 4px;
     text-align: center;
     line-height: 32px;
@@ -234,8 +234,8 @@ body {
 .menu li a.active div,
 .menu li a:hover div {
     background: #1455ff;
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36x;
     border-radius: 4px;
     text-align: center;
     line-height: 32px;
@@ -244,23 +244,31 @@ body {
 }
 
 .menu li img {
-    width: 32px;
-    height: auto;
+    width: 26px;
+    height: 26px;
     display: block;
     margin: auto;
+    object-fit: contain;
 }
 
 .logout a {
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     text-decoration: none;
 }
-
+.logout ul{
+    margin: 0;
+    padding: 0;
+}
+.logout ul li{
+    display: block;
+    margin: 1rem 0;
+}
 .logout a div {
     background: none;
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
     border-radius: 4px;
     text-align: center;
     line-height: 32px;
@@ -269,23 +277,37 @@ body {
 }
 
 .logout a img {
-    width: 32px;
-    height: auto;
+    width: 26px;
+    height: 26px;
     display: block;
     margin: auto;
+    object-fit: contain;
 }
 
 .logout a:hover div {
     background: #1455ff;
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
     border-radius: 4px;
     text-align: center;
     line-height: 32px;
     display: flex;
     margin: auto;
 }
+.logout .user > div, .logout .user:hover > div{
 
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background: #25303E;
+    margin: auto;
+    overflow: hidden;
+}
+.logout .user > div >img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
 .content {
     width: calc(100% - 90px);
     height: calc(100vh - 2rem);
@@ -464,7 +486,7 @@ body {
 }
 
 .project-card {
-    width: 270px;
+    width: 275px;
     text-align: center;
     height: 100%;
 }
@@ -488,7 +510,7 @@ body {
 .project-body {
     background: #1C2531;
     border-radius: 25px;
-    padding: 5rem 1.5rem 2rem 1.5rem;
+    padding: 5rem 1.5rem 1rem 1.5rem;
     position: relative;
 }
 
@@ -504,9 +526,33 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    -webkit-line-clamp: 4;
-    height: 88px;
+    -webkit-line-clamp: 3;
+    height: 68px;
+    margin-bottom: 1rem;
+
 }
+.project-data{
+  padding-top: 1rem;
+  border-top: 1px solid rgba(243, 246, 249, 0.45);
+}
+.project-data ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+  justify-content: space-between;
+  }
+  .project-data ul li{
+    display: inline-block;
+  }
+  .project-data ul li img{
+    width: 18px;
+  height: 18px;
+    object-fit: contain;
+    opacity: .3;
+  }
+  .project-data ul li span{
+    margin-left: .5rem;
+  }
 
 .action .dropdown-menu a {
     background: none;
@@ -647,9 +693,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-.upload-btn {}
-
+.upload-section.inline{
+    flex: 1 1 auto;
+  width: 1%;
+  border: none;
+}
 .upload-btn input[type="file"] {
     display: none;
 }
@@ -661,12 +709,9 @@ body {
     background: #1455ff;
     border-radius: 4px;
 }
-
 .upload-btn span {
     margin-left: 1rem;
 }
-
-
 .persona-card {
     width: 270px;
     text-align: center;
@@ -872,7 +917,7 @@ body {
     border-color: #1455ff;
 }
 
-.usecase-list ul {
+.usecase-list > ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -881,7 +926,7 @@ body {
     flex-wrap: wrap;
 }
 
-.usecase-list ul li {
+.usecase-list > ul li {
     display: block;
 }
 
@@ -890,7 +935,7 @@ body {
 }
 
 .usecase-list .usecase-body {
-    width: 173px;
+    width: 240px;
     text-align: center;
     height: 100%;
     position: relative;
@@ -902,30 +947,57 @@ body {
 .usecase-icon {
     background: #25303E;
     border-radius: 18px;
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .usecase-title {
-    font-size: 12px;
-    line-height: 18px;
-    padding: 1rem 0;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 1rem;
+    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.usecase-title .uc, .usecase-title .fr{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+.usecase-title .tc{
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(243, 246, 249, 0.3);
+    padding-top: .5rem;
+    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.usecase-title .uc img, .usecase-title .fr img{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin-right: .5rem;
+    opacity: .4;
 }
 
 .usecase-list .form-check-input {
-    width: 173px;
-    height: 180px;
+    width: 30px;
+    height: 30px;
     border-radius: 26px;
     z-index: 1;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     align-self: center;
     margin-right: 1rem;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
-    top: 0;
+    top: 10px;
+  left: 14px;
 }
 
 .usecase-list .form-check-input:checked {
@@ -942,7 +1014,6 @@ body {
     width: 100% !important;
   background: #1C2531;
   border-radius: 18px;
-  overflow: hidden;
   align-items: center;
   padding: 0 .5rem;
 }
@@ -970,3 +1041,31 @@ body {
     background-color: #1455ff;
     border-color: #1455ff;
   }
+  .persona-header{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .persona-header .ph-name{
+    align-self: center;
+    font-size: 14px;
+  }
+  .persona-header .ph-name span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #AFC5FF;
+  }
+  .persona-header  .persona-img{
+    height: 40px;
+    width: 40x;
+    border-radius: 30px;
+    border: 2px solid rgb(28, 37, 49);
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  .persona-header  .persona-img img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    margin: -2px;
+  }
+
