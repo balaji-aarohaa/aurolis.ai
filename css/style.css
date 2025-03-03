@@ -81,6 +81,9 @@ body {
     padding: .75rem 1rem;
     color: #fff;
 }
+input:-internal-autofill-selected{
+    background-color: transparent !important;
+}
 
 .login-form .input-group .form-control::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -367,15 +370,37 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
-
-.btn-grey {
+.btn-blue.disabled {
     border: none;
     color: #fff;
-    background: rgba(232, 79, 79, .5);
+    background: #1455ff;
     padding: .65rem 2rem .65rem 2rem;
     border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
+    opacity: .5;
+    cursor: none;
+}
+
+.btn-red {
+    border: none;
+    color: #fff;
+    background: #98111e;
+    padding: .65rem 2rem .65rem 2rem;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-red.disabled {
+    border: none;
+    color: #fff;
+    background: #98111e;
+    padding: .65rem 2rem .65rem 2rem;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: .5;
+    cursor: none;
 }
 
 .card {
@@ -981,6 +1006,22 @@ body {
 .usecase-title .tc:hover{
     color: #1455ff;
 }
+.usecase-title .tc.no-hover:hover{
+    color: #AFC5FF;
+}
+
+.usecase-title .uc-link{
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;  
+    color: #AFC5FF;
+    cursor: pointer;
+}
+.usecase-title .uc-link:hover{
+    color: #1455ff;
+}
+
 .usecase-title .uc img, .usecase-title .fr img{
     width: 16px;
     height: 16px;
@@ -1072,4 +1113,48 @@ body {
     object-fit: contain;
     margin: -2px;
   }
-
+  .persona-list{
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, .06);
+    height: 200px;
+    overflow: auto;
+    padding: 1rem;
+  }
+  .persona-list ul{
+    padding: 0;
+    margin: 0;
+  }
+  .persona-list ul li{
+    display: block;
+    margin: .5rem;
+  }
+  .persona-list ul li .p-img{
+    width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background: #25303E;
+  margin: auto;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5rem;
+  }
+  .persona-list ul li .p-img img{
+    width: 36px;
+  height: 36px;
+  object-fit: contain;
+  }
+  .persona-list .form-check-input {
+    width: 30px;
+    height: 30px;
+    border-radius: 26px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-self: center;
+    margin-right: 1rem;
+  }
+  .persona-list .form-check-input:checked {
+    background-color: #1455ff;
+    border-color: #1455ff;
+    border: 1px solid #25303e;
+  }

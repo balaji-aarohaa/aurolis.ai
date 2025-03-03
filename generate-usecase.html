@@ -37,9 +37,15 @@
                 </ul>
             </div>
             <div class="logout">
-                <a href="index.html">
-                    <div><img src="img/logout.png"></div>Logout
-                </a>
+                <ul>
+                    <li><a href="#" class="user">
+                        <div><img src="img/persona.png"></div>Sam
+                    </a></li>
+                    <li><a href="index.html">
+                        <div><img src="img/logout.png"></div>Logout
+                    </a></li>
+                </ul>
+                
             </div>
         </div>
         <div class="content">
@@ -93,7 +99,9 @@
                                             <img src="img/file.png">                                            
                                         </div>
                                         <div class="usecase-title">
+                                            <div class="uc-link" data-bs-toggle="modal" data-bs-target="#viewInfo">
                                             User Registration
+                                        </div>
                                         </div>
                                     </div>   
                                     </div>
@@ -116,7 +124,9 @@
                                             <img src="img/file.png">                                            
                                         </div>
                                         <div class="usecase-title">
+                                            <div class="uc-link" data-bs-toggle="modal" data-bs-target="#viewInfo">
                                            Login/Logout
+                                        </div>
                                         </div>
                                     </div>   
                                     </div>
@@ -139,7 +149,9 @@
                                             <img src="img/file.png">                                            
                                         </div>
                                         <div class="usecase-title">
+                                            <div class="uc-link" data-bs-toggle="modal" data-bs-target="#viewInfo">
                                             Password Recovery
+                                        </div>
                                         </div>
                                     </div>   
                                     </div>
@@ -162,7 +174,9 @@
                                             <img src="img/file.png">                                            
                                         </div>
                                         <div class="usecase-title">
+                                            <div class="uc-link" data-bs-toggle="modal" data-bs-target="#viewInfo">
                                             User Profile
+                                        </div>
                                         </div>
                                     </div>   
                                     </div>
@@ -216,6 +230,53 @@
                     </div>
                 </div>
                 <div id="create-section">
+                    <label for="pn" class="form-label">Select Persona</label>
+                    <div class="persona-list mb-4">                        
+                        <ul>
+                            <li><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ch11">
+                                <label class="form-check-label" for="ch11">
+                                    <div class="p-img"><img src="img/persona2.png"></div> Jacob Taylor - <small>Bond trader</small>
+                                </label>
+                              </div>
+                              </li>
+                              <li><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ch12">
+                                <label class="form-check-label" for="ch12">
+                                    <div class="p-img"><img src="img/persona2.png"></div> Allan - <small>Product Manager</small>
+                                </label>
+                              </div>
+                              </li>
+                              <li><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ch13">
+                                <label class="form-check-label" for="ch13">
+                                    <div class="p-img"><img src="img/persona2.png"></div> Robert Clark - <small>Prospective Buyer</small>
+                                </label>
+                              </div>
+                              </li>
+                              <li><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ch14">
+                                <label class="form-check-label" for="ch14">
+                                    <div class="p-img"><img src="img/persona2.png"></div> Sam Bailey - <small>Procurement Officer</small>
+                                </label>
+                              </div>
+                              </li>
+                              <li><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ch15">
+                                <label class="form-check-label" for="ch15">
+                                    <div class="p-img"><img src="img/persona2.png"></div> Robert Clark - <small>Customer Service Agent</small>
+                                </label>
+                              </div>
+                              </li>
+                              <li><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ch16">
+                                <label class="form-check-label" for="ch16">
+                                    <div class="p-img"><img src="img/persona2.png"></div> Jack Bell - <small>Financial Analyst</small>
+                                </label>
+                              </div>
+                              </li>
+                        </ul>
+                    </div>
                     <div class="mb-4 ">
                         <label for="pn" class="form-label">Enter Use Case</label>
                         <div class="upload-doc">
@@ -326,6 +387,22 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="modal fade" id="viewInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">View Use Case</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>     
+        </div>
+        <div class="modal-body">                
+           
+        
+        </div>
+    </div>
+</div>
 </div>
 
 
